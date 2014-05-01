@@ -22,6 +22,6 @@ notifictions:
     skip_join: true
   hipchat:
     rooms:
-      - f98d8ba90a9177fc8104d9c0cc7779@thotjs
+      - f98d8ba90a9177fc8104d9c0cc7779@ThotJS
     on_success: always
     on_failure: always
