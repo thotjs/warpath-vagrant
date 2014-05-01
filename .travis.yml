@@ -6,7 +6,7 @@ script:
   true
 git:
   submodules: false
-notifictions:
+notifications:
   email:
     recipients:
       - jfugett27@gmail.com
@@ -19,7 +19,6 @@ notifictions:
     on_success: always
     on_failure: always
     use_notice: true
-    skip_join: true
   hipchat:
     rooms:
       - f98d8ba90a9177fc8104d9c0cc7779@ThotJS
