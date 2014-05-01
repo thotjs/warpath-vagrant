@@ -34,5 +34,8 @@ notifictions:
     on_failure: always
     use_notice: true
     skip_join: true
-  hipchat: f98d8ba90a9177fc8104d9c0cc7779@thotjs
-    on
+  hipchat:
+    rooms:
+      - f98d8ba90a9177fc8104d9c0cc7779@thotjs
+    on_success: always
+    on_failure: always
