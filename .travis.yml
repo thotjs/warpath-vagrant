@@ -2,20 +2,6 @@ language: node_js
 node_js:
   - 0.11
   - 0.10
-env:
-#  - var=test other=true #These should only be used as needed for a particular repo
-#  - second=build # Defining a second line of environment variables will run a secondary buld
-services:
-#  - mysql #This should only be enabled if needed
-#  - mongodb #This should only be enabled if needed
-#  - redis-server #This should only be enabled if needed
-before_install:
-#  - git submodule update --init --recursive #This should only be enabled if needed
-install:
-#  - npm install # This should only be enabled if needed
-#  - bower install # This should only be enabled if needed
-before_script:
-#  - mysql -e 'create database warpath;' # This should only be enabled if needed
 script:
   true
 git:
