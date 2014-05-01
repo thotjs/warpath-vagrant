@@ -18,21 +18,6 @@ before_script:
 #  - mysql -e 'create database warpath;' # This should only be enabled if needed
 script:
   true
-# we need something here at all times even if it's just the linux true
-#  npm test # This should be set to whatever is appropriate
-after_success:
-# as needed
-after_failure:
-# as needed
-after_script:
-#as needed
-addons:
-  hosts:
-#    - http://thotjs.io # as needed
-#    - http://www.warpath.com # as needed
-#  sauce_connect: # as needed
-#    username: "Your Sauce Labs username" # encrypt this
-#    access_key: "Your Sauce Labs access key" # encrypt this
 git:
   submodules: false
 notifictions:
@@ -50,10 +35,4 @@ notifictions:
     use_notice: true
     skip_join: true
   hipchat: f98d8ba90a9177fc8104d9c0cc7779@thotjs
-#  webhooks: # as needed
-#    urls: # as needed
-#      - http://domain.com/uri
-#      - http://domain2.com/uri2
-#    on_success: always # as needed
-#    on_failure: always # as needed
-#    on_start: false # as needed
+    on

@@ -179,3 +179,5 @@ xcuserdata
 DerivedData
 *.xcuserstate
 
+### Vagrant ###
+.vagrant
