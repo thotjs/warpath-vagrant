@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-  0.11
-  0.10
+  - 0.11
+  - 0.10
 env:
 #  - var=test other=true #These should only be used as needed for a particular repo
 #  - second=build # Defining a second line of environment variables will run a secondary buld
