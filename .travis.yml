@@ -17,7 +17,7 @@ install:
 before_script:
 #  - mysql -e 'create database warpath;' # This should only be enabled if needed
 script:
-  test
+  true
 # we need something here at all times even if it's just the linux true
 #  npm test # This should be set to whatever is appropriate
 after_success:
