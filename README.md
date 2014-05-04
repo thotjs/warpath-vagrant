@@ -5,11 +5,11 @@ This repo holds the various vagrant files for managing our coreos servers in dif
 Usage:
 
 ``` bash
-  git clone git@github.com:thotjs/warpath-vagrant.git
+git clone git@github.com:thotjs/warpath-vagrant.git
 
-  cd {environment}
+cd {environment}
 
-  vagrant up
+vagrant up
 ```
 
 The possible environments are:
