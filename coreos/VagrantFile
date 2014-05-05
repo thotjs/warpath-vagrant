@@ -5,6 +5,32 @@ Vagrant.require_version ">= 1.5.4"
 
 VAGRANTFILE_API_VERSION = "2"
 
+CONFIG = "../config.rb"
+
+# Defaults for config options defined in CONFIG
+$num_instances = 1
+$enable_serial_logging = false
+$vb_gui = false
+$vb_memory = 1024
+$vb_cpus = 1
+
+if File.exist?(CONFIG)
+  require_relative CONFIG
+end
+
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "yungsang/coreos"
+    config.vm.box = "coreos-alpha"
+    config.vm.box_url = "http://storage.core-os.net/coreos/amd64-usr/alpha/coreos_production_vagrant.box"
+
+  (1..$num_instances).each do |i|
+    config.vm.define vm_name = "coreos%02d" % i do |config|
+      config.vm.hostname = vm_name
+
+      config.vm.provider :virtualbox do |vb|
+        vb.gui = $vb_gui
+        vb.memory = $vb_memory
+        vb.cpus = $vb_cpus
+      end
+    end
+  end
 end
