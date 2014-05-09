@@ -181,3 +181,6 @@ DerivedData
 
 ### Vagrant ###
 .vagrant
+
+### Project Specific ###
+config.rb
